@@ -1,0 +1,7 @@
+CREATE TABLE urls (
+    id SERIAL PRIMARY KEY,
+    original_url TEXT NOT NULL,
+    shortcode VARCHAR(10) UNIQUE NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    clicks INTEGER DEFAULT 0
+);
